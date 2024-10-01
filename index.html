@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEATHER APP</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body >
+        <div class="wrapper">
+            <h1 class="headline">Weather App</h1>
+            <!-- tab div -->
+            <div class="tab-container">
+                <p class="tabs tab1">your weather</p>
+                <p class="tabs tab2">search weather</p>
+            </div>
+
+
+            <!-- weather data container -->
+            <div class="data-container">
+
+                <!-- grant acces container -->
+                <div class="grant-acces-container">
+                    <img src="https://d1fdloi71mui9q.cloudfront.net/BMZZmgf4QLqQw0UVgv9V_LOGO%20GOOGLE%20MAPS.svg.png" class="location-icon" width="80" height="80" loading="lazy">
+                    <p>grant location acces</p>
+                    <p>allow acces to get weather information</p>
+                    <button class="grant-acces-button">Grant Access</button>
+                </div>
+
+                <!-- search container -->
+                <form class="search-container" >
+                    <input  class="input-field"  placeholder="search for city here..">
+                    <button class="search-button" type="submit"  > <img  src="https://th.bing.com/th/id/OIP.uB3ucUkLNQikUOuElVcv6wHaHa?rs=1&pid=ImgDetMain" height="30" width="30" loading="lazy"  > </button>
+                </form>
+
+                <!-- loading scrren container -->
+                <div class="loading-screen-container">
+                    <img src="https://th.bing.com/th/id/R.bef9749a5d0fd6999aea4bb8f61e3594?rik=lyBRuOCZw38O3Q&riu=http%3a%2f%2forig14.deviantart.net%2f00af%2ff%2f2013%2f094%2ff%2f4%2floading_gif_by_zegerdon-d60eb1v.png&ehk=AzeYe6MyxpzPHdQJKySAkNmbM9Nk2U3oVC54BBkHHwM%3d&risl=&pid=ImgRaw&r=0" height="200" width="200">
+                    <p>loading</p>
+                </div>
+
+                <div class="weather-info-container">
+                    <!-- city -->
+                    <div class="location-container">
+                        <p class="city-name"></p>
+                        <img  class="country-flag" >
+                    </div>
+                    <!-- type of weather -->
+                    <p class="weather-type"></p>
+                    <!-- type image -->
+                    <div class="weather-type-image-container">
+                    <img  class="weather-type-image">
+                    </div>
+                    <!-- temperature -->
+                    <p class="temperature-value"></p>
+                    <!-- other weather details -->
+                    <div class="extra-detail-container">
+    
+                        <div class="parameter">
+                            <img src="https://webstockreview.net/images/windy-clipart-vector-8.png" height="130" width="130" class="wind-image">
+                            <p class="windspeed-heading">Windspeed</p>
+                            <p class="windspeed-value"></p>
+                        </div>
+                        
+                        <div class="parameter">
+                            <img src="https://freesvg.org/img/1588765770Luftfeuchte.png" class="humidity-image" height="130" width="130">
+                            <p class="humidity-heading">humidity</p>
+                            <p class="humidity-value"></p>
+                        </div>
+                        
+                        <div class="parameter">
+                            <img src="https://webstockreview.net/images/clipart-clouds-vector-4.png" class="clouds-image" height="130" width="130">
+                            <p class="clouds-heading">clouds</p>
+                            <p class="clouds-value"></p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+        </div>        
+
+        <script src="brain.js"></script>
+    </body>
+</html>
